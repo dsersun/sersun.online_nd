@@ -1,0 +1,29 @@
+{
+  "name": "sersun.online_nd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsersun/sersun.online_nd.git"
+  },
+  "author": "dsersun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsersun/sersun.online_nd/issues"
+  },
+  "homepage": "https://github.com/dsersun/sersun.online_nd#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-replace": "^1.1.3"
+  }
+}
