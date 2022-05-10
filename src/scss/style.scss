@@ -1,7 +1,47 @@
-body {
-    background-color: yellowgreen;
-    color: red;
-    span {
-        color: beige;
-    }
+@import "components/font_set.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Onest',Arial,sans-serif;
 }
+
+:root {
+    --gap: 1em;
+    --index: calc(1vw + 1vh);
+}
+
+header {
+    font-size: calc(var(--index) * 1.45);
+    color: aquamarine;
+    height: 6vh;
+    background: #000;
+    opacity: .65;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prime {
+    font-family:'Onest',Arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+
+	h1 {
+        font-weight:700;
+	    font-size: calc(var(--index) * 2.15);
+	    color:  aquamarine;
+    }
+    
+    span {
+        font-weight:500;
+	    font-size: calc(var(--index) * 1.2);
+	    color:  green;
+    }
+} 

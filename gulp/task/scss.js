@@ -20,18 +20,19 @@ export const scss = () => {
             outputStyle: 'expanded'
         }))
         .pipe(groupCssMediaQueries())
-        .pipe(webpcss(
+        // Раскоментировать когда решится добавление в html классов .webp .no-webp
+        /*.pipe(webpcss(
             {
                 webpClass: ".webp",
-                nowebpClass: ".no-webp"
+                noWebpClass: ".no-webp"
             }
-        ))
+        ))*/
         .pipe(autoprefixer({
             grid: true,
             overrideBrowserlist: ['last 3 versions'],
             cascade: true
         }))
-        // Раскоментировать если нужен несжатый дубль файла стилей
+        // Раскоментировать если нужен несжатый дубль файла
         .pipe(app.gulp.dest(app.path.build.css))
         .pipe(cleanCss())
         .pipe(rename({

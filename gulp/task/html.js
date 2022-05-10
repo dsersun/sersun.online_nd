@@ -1,7 +1,7 @@
 import fileinclude from "gulp-file-include";
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
-//import browserSync from "browser-sync";
+import browserSync from "browser-sync";
 
 export const html = () => {
     return app.gulp.src(app.path.src.html)
@@ -18,7 +18,7 @@ export const html = () => {
             versionNumber({
                 'value': '%DT%',
                 'append': {
-                    "key": '_v',
+                    'key': '_v',
                     'cover': 0,
                     'to': [
                         'css',
